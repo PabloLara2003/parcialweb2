@@ -10,5 +10,6 @@ import { EvaluacionController } from './evaluacion.controller';
   imports: [TypeOrmModule.forFeature([EvaluacionEntity, ProyectoEntity, ProfesorEntity])],
   providers: [EvaluacionService],
   controllers: [EvaluacionController],
+  exports: [EvaluacionService],
 })
 export class EvaluacionModule {}
